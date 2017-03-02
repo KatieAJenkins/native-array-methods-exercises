@@ -5,9 +5,9 @@ var mapArray = [ 45, 1, -10, 11, 250 ];
 function multiplyBy10 (array) {
  // your code here
   return array.map(function(number){
-   console.log(number);
-   console.log(number * 10);
-   console.log(mapArray);
+  //  console.log(number);
+  //  console.log(number * 10);
+  //  console.log(mapArray);
    return number * 10;
  });
 }
@@ -15,8 +15,14 @@ function multiplyBy10 (array) {
 multiplyBy10(mapArray);
 
 function shiftRight (array) {
- // your code here
+ return array.map(function(number){
+   //find index of number in array
+   console.log(mapArray.indexOf(number));
+   //move number 1 index to right
+ });
 };
+
+shiftRight(mapArray);
 
 function onlyVowels (array) {
  // your code here
